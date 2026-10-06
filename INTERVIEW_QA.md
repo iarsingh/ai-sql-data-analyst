@@ -76,12 +76,12 @@ This is a concrete regression example from the repository. Its assertions establ
 
 - `GET /healthz` → `healthz` in [`src/agentx/main.py`](src/agentx/main.py#L8).
 - `POST /agent/run` → `post_run` in [`src/agentx/main.py`](src/agentx/main.py#L12).
-- `GET /readyz` → `readyz` in [`src/agentx/ops.py`](src/agentx/ops.py#L44).
-- `POST /workspaces` → `create_workspace` in [`src/agentx/ops.py`](src/agentx/ops.py#L49).
-- `GET /workspaces` → `list_workspaces` in [`src/agentx/ops.py`](src/agentx/ops.py#L66).
-- `POST /workspaces/{workspace_id}/jobs` → `create_job` in [`src/agentx/ops.py`](src/agentx/ops.py#L73).
-- `GET /jobs/{job_id}` → `get_job` in [`src/agentx/ops.py`](src/agentx/ops.py#L96).
-- `POST /jobs/{job_id}/approve` → `approve_job` in [`src/agentx/ops.py`](src/agentx/ops.py#L105).
+- `GET /readyz` → `readyz` in [`src/agentx/ops.py`](src/agentx/ops.py#L74).
+- `POST /workspaces` → `create_workspace` in [`src/agentx/ops.py`](src/agentx/ops.py#L80).
+- `GET /workspaces` → `list_workspaces` in [`src/agentx/ops.py`](src/agentx/ops.py#L98).
+- `POST /workspaces/{workspace_id}/jobs` → `create_job` in [`src/agentx/ops.py`](src/agentx/ops.py#L106).
+- `GET /jobs/{job_id}` → `get_job` in [`src/agentx/ops.py`](src/agentx/ops.py#L130).
+- `POST /jobs/{job_id}/approve` → `approve_job` in [`src/agentx/ops.py`](src/agentx/ops.py#L140).
 
 These are literal decorators. Application/router prefixes, authentication, and middleware must be checked in the corresponding setup code.
 
