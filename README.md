@@ -1,5 +1,12 @@
 # AI Data Analyst Agent
 
+## Overview
+
+A small data analyst agent that answers a question by choosing among profile, SQL, statistics and visualization tools, then returns an explanation along with a charts payload. Queries are SQL-shaped aggregates, and any request to write data is refused. The agent runs behind `POST /agent/run`, and a versioned `/v1` API adds workspaces, tenant isolation, job approval and audit records.
+
+- **Built with:** Python, pytest, Docker, Docker Compose, GitHub Actions
+- **Scope:** Laptop lab with tests; it uses no hosted model, refuses writes, and refuses production apply.
+
 <!-- project-guide:start -->
 ## Project guide
 
